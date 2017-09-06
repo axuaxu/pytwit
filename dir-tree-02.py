@@ -10,7 +10,7 @@ rootDir = '.\img'
 
 
 def flist():
-  t="s"
+  t="dir,name\n"
   for dirName, subdirList, fileList in os.walk(rootDir):
     print('Found directory: %s' % dirName)
      
