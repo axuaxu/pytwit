@@ -13,10 +13,10 @@ def flist():
   t="s"
   for dirName, subdirList, fileList in os.walk(rootDir):
     print('Found directory: %s' % dirName)
-    t = t+dirName+','
+     
     for fname in fileList:
         print('\t%s' % fname)
-        t=t+fname+'\n'
+        t=t+dirName+','+fname+'\n'
   return t
 
 # writing csv
