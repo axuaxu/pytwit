@@ -25,7 +25,7 @@ def tweet_image(url, message):
         print("Unable to download image")
 
 url = "http://media02.hongkiat.com/raspberry-pi-projects/1-lappi-netbook.jpg"
-fn = "cagnes-landscape-1910-1.jpg"
+fn = ".\img\paul-cezanne\pierrot-and-harlequin-mardi-gras-1888.jpg"
 message = "landscape"
 #tweet_image(url,message)
 
