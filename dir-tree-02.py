@@ -6,23 +6,23 @@ import os
 # Set the directory you want to start from
 
 print('first check')
-rootDir = '.\img'
+rootDir = '.\images'
 
 
 def flist():
-  t="dir,name\n"
+  t="dir,name,twi,extra\n"
   for dirName, subdirList, fileList in os.walk(rootDir):
     print('Found directory: %s' % dirName)
      
     for fname in fileList:
         print('\t%s' % fname)
-        t=t+dirName+','+fname+'\n'
+        t=t+dirName+','+fname+', , ,\n'
   return t
 
 # writing csv
  
 ft = flist()  
-with open('tf.csv', 'wb') as f:
+with open('flist.csv', 'wb') as f:
       f.write(ft)
 
  
