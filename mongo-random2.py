@@ -26,3 +26,4 @@ coll.update_one(
 	{"$set":{"twi":"x"},
 	 "$currentDate": {"lastModified": True}})
 	
+coll.delete_one({"_id":id})
